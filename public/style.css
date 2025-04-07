@@ -1,0 +1,148 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: #007BFF;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Image styling */
+img {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+/* Section styling */
+section {
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: left;
+}
+
+/* Paragraph and list item styling */
+p, ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* HR Styling */
+hr {
+    border: 1px solid #e1e1e1;
+    margin: 40px 0;
+}
+
+/* Button and link styles */
+a, .button {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover, .button:hover {
+    background-color: #0056b3;
+}
+
+/* Collapsible sections for longer content */
+.collapsible {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.collapsible:hover {
+    background-color: #ddd;
+}
+
+.collapsible:after {
+    content: '\002B';
+    font-size: 1.5rem;
+    color: #007BFF;
+    float: right;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+/* List style */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* responsive layout */
+    grid-auto-rows: 60px;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .skills-grid img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .skills-grid img:hover {
+    transform: scale(1.2);
+  }
+  
